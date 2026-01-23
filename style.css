@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* FLEX CONTAINER */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* FLEX ITEMS */
+.card {
+    height: 180px;
+    flex-basis: 23%;          /* Flex child property */
+    flex-grow: 1;             /* Flex child property */
+    flex-shrink: 1;           /* Flex child property */
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* TEXT LABEL */
+.card span {
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 6px 10px;
+    margin: 10px;
+}
+
+/* INDIVIDUAL FLEX CHILD CUSTOMIZATION */
+.summer {
+    background: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae') center/cover;
+    order: 1;                 /* Flex child property */
+}
+
+.brick {
+    background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994') center/cover;
+    order: 2;
+}
+
+.renovated {
+    background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471') center/cover;
+    order: 3;
+    align-self: stretch;      /* Flex child property */
+}
+
+.barn {
+    background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688') center/cover;
+    order: 4;
+}
