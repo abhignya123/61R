@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  background: navy;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* SECTION */
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* HORIZONTAL ROW */
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+/* CARD (WIDTH FIXED) */
+.card {
+  width: 220px;
+  background: #eaeaea;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+/* DISPLAY TYPES */
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* FLEX ITEMS */
+.flex-item {
+  background: lightblue;
+}
+
+/* COMBINATORS */
+.parent {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Descendant */
+.parent p {
+  color: red;
+}
+
+/* Child */
+.parent > span {
+  color: blue;
+  font-weight: bold;
+}
+
+/* Adjacent sibling */
+h3 + p {
+  background: yellow;
+  text-align: center;
+  padding: 5px;
+}
+
+/* General sibling */
+h3 ~ p {
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 5px;
+}
