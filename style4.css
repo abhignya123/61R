@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body center */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  background-color: rgb(0, 0, 41);
+  color: white;
+  padding: 20px 50px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Row flex */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Column flex */
+.col {
+  display: flex;
+  justify-content: space-between;   /* try: center | space-around */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;   /* responsive */
+}
+
+/* Images */
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
